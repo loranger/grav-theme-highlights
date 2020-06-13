@@ -6,6 +6,8 @@ The **Highlights** Theme is for [Grav CMS](http://github.com/getgrav/grav).
 
 [Highlights](https://html5up.net/highlights) port from [HTML5 UP](https://html5up.net/)
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="3r20N9J"><a href="https://imgur.com/3r20N9J">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 ## Features
 
 - Single page application
@@ -18,7 +20,7 @@ The **Highlights** Theme is for [Grav CMS](http://github.com/getgrav/grav).
 
 - Default view template `default.md`
 
-- Modular view templates: 
+- Modular view templates:
 
   ```
   modular.md
@@ -51,7 +53,7 @@ You should now have all the theme files under
 /your/site/grav/user/themes/highlights
 ```
 
-##Default Options
+## Default Options
 
 Highlights comes with a few default options that can be set site-wide.  These options are:
 
@@ -89,7 +91,7 @@ Alternatively, you can you use the drag-n-drop "Background image" field in the H
 
 # Pages
 
-##Modular page
+## Modular page
 
 As a single page theme, the modular page is the default one. Once you create your modular page, you should add modular content children : One header and one or more parts.
 
@@ -113,7 +115,7 @@ list_as_grid: false
 background_image: mypic.jpg
 ```
 
-##Default page
+## Default page
 
 You can also use a default grav structure with pages using *default* template. A minimal navigation bar will be included and your content will be rendered as one single page.
 
