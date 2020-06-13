@@ -1,0 +1,43 @@
+title: Part
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            header.display_title:
+              type: toggle
+              label: Display title
+              highlight: 1
+              default: 1
+              options:
+                  1: Enabled
+                  0: Disabled
+              validate:
+                   type: bool
+            header.next_label:
+              type: text
+              label: Next button label
+              default: Next
+              validate:
+                required: true
+                type: text
+            header.background_image:
+              type: filepicker
+              label: Background Image
+              preview_images: true
+              description: 'If not specified, this defaults to the first image found in the page''s folder'
+            header.list_as_grid:
+              type: toggle
+              label: Render list as grid
+              highlight: 1
+              default: 0
+              options:
+                  1: Enabled
+                  0: Disabled
+              validate:
+                   type: bool

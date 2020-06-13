@@ -1,0 +1,52 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% if count(media.images) %}
+    {% set background_path = header.background_image ? media[page.header.background_image].url : (page.media.images|first).url %}
+{% else %}
+    {% set background_path = theme_var('background_image') ? 'theme://images/background/' ~ (theme_var('background_image')|first).name : 'theme://images/bg.jpg' %}
+{% endif %}
+<!DOCTYPE html>
+
+<html style="background-image: url('{{ url('theme://images/overlay.png')  }}'), url('{{ url(background_path)  }}');" lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ theme_var('logo_image') ? url('theme://images/logo/' ~ (theme_var('logo_image')|first).name) : url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+{% endblock head %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css/main.css', 98) %}
+    {% do assets.addCss('theme://css/custom.css', 98) %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('theme://js/main.js', 100) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+</head>
+<body class="is-preload {{ page.header.body_classes }}">
+
+{% block body %}
+        {% block content %}{% endblock %}
+{% endblock %}
+
+{% include 'partials/footer.html.twig' %}
+
+
+{% block bottom %}
+    {{ assets.js('bottom')|raw }}
+{% endblock %}
+
+</body>
+</html>

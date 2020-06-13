@@ -1,0 +1,20 @@
+{% set background_image = header.background_image ? media[page.header.background_image] : media.images|first %}
+
+<section id="{{ page.slug }}" class="main special">
+    <div class="container">
+        {% if count(media.images) %}
+        <span class="image fit primary">{{ background_image }}</span>
+        {% endif %}
+        <div class="content {{header.list_as_grid and header.list_as_grid == 1 ? 'list-as-grid' : ''}}">
+            {% if header.display_title and header.display_title == 1 %}
+            <header class="major">
+                <h2>{{ header.title }}</h2>
+            </header>
+            {% endif %}
+            {{ content|raw }}
+        </div>
+        {% if not page.parent().children().isLast(page.path) %}
+        <a href="#{{ page.parent().children().prevSibling(page.path).slug }}" class="goto-next scrolly">{{ header.next_label }}</a>
+        {% endif %}
+    </div>
+</section>

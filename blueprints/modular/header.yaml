@@ -1,0 +1,28 @@
+title: Header
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          fields:
+            header.display_button:
+              type: toggle
+              label: Display button
+              highlight: 1
+              default: 1
+              options:
+                  1: Enabled
+                  0: Disabled
+              validate:
+                   type: bool
+            header.button_label:
+              type: text
+              label: Button label
+              default: Begin
+              validate:
+                required: true
+                type: text

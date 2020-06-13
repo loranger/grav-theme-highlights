@@ -1,0 +1,44 @@
+name: Highlights
+slug: highlights
+type: theme
+version: 0.1.0
+description: Highlights port from HTML5 UP
+icon: rebel
+author:
+  name: loranger
+  email: loranger@free.fr
+homepage: https://github.com/loranger/grav-theme-highlights
+keywords: grav, theme, etc
+bugs: https://github.com/loranger/grav-theme-highlights/issues
+readme: https://github.com/loranger/grav-theme-highlights/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+
+    logo_image:
+      type: file
+      label: Website logo image (used for favicon)
+      size: large
+      destination: 'theme://images/logo'
+      multiple: false
+      markdown: true
+      description: Will be used instead of default logo `theme://images/logo.png`
+      accept:
+        - image/*
+
+
+    background_image:
+      type: file
+      label: Default website background image
+      size: large
+      destination: 'theme://images/background'
+      multiple: false
+      markdown: true
+      description: Will be used instead of default background `theme://images/bg.jpg`
+      accept:
+        - image/*
