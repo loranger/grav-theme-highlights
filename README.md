@@ -6,8 +6,6 @@ The **Highlights** Theme is for [Grav CMS](http://github.com/getgrav/grav).
 
 [Highlights](https://html5up.net/highlights) port from [HTML5 UP](https://html5up.net/)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="3r20N9J"><a href="https://imgur.com/3r20N9J">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
 ## Features
 
 - Single page application
