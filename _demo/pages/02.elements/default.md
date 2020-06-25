@@ -2,33 +2,45 @@
 title: Elements
 ---
 
-<section>
-<h4>Text</h4>
-<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+#### Text
+
+This is **bold** and this is <strong>strong</strong>. This is _italic_ and this is <em>emphasized</em>.
 This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-<hr />
+This is <u>underlined</u> and this is code: `for (;;) { ... }`. Finally, [this is a link](#).
+
+---
+
 <header>
-    <h4>Heading with a Subtitle</h4>
-    <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+<h4>Heading with a Subtitle</h4>
+<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam<p/>    
 </header>
-<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+
+Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
+
 <header>
     <h5>Heading with a Subtitle</h5>
     <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
 </header>
-<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-<hr />
-<h2>Heading Level 2</h2>
-<h3>Heading Level 3</h3>
-<h4>Heading Level 4</h4>
-<h5>Heading Level 5</h5>
-<h6>Heading Level 6</h6>
-<hr />
-<h5>Blockquote</h5>
-<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-<h5>Preformatted</h5>
-<pre><code>i = 0;
+
+Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
+
+---
+
+## Heading Level 2
+### Heading Level 3
+#### Heading Level 4
+##### Heading Level 5
+###### Heading Level 6
+
+---
+
+##### Blockquote
+> Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.
+
+##### Preformatted
+
+```
+i = 0;
 
 while (!deck.isInOrder()) {
 print 'Iteration ' + i;
@@ -36,11 +48,13 @@ deck.shuffle();
 i++;
 }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-</section>
+print 'It took ' + i + ' iterations to sort the deck.';
+```
 
-<section>
-<h4>Lists</h4>
+
+
+#### Lists
+
 <div class="row">
     <div class="col-6 col-12-medium">
         <h5>Unordered</h5>
@@ -75,7 +89,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         </ul>
     </div>
 </div>
-<h5>Actions</h5>
+
+##### Actions
 <ul class="actions">
     <li><a href="#" class="button primary">Default</a></li>
     <li><a href="#" class="button">Default</a></li>
@@ -110,11 +125,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         </ul>
     </div>
 </div>
-</section>
 
-<section>
-<h4>Table</h4>
-<h5>Default</h5>
+
+#### Table
+
+##### Default
+
 <div class="table-wrapper">
     <table>
         <thead>
@@ -160,7 +176,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     </table>
 </div>
 
-<h5>Alternate</h5>
+##### Alternate
 <div class="table-wrapper">
     <table class="alt">
         <thead>
@@ -205,10 +221,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         </tfoot>
     </table>
 </div>
-</section>
 
-<section>
-<h4>Buttons</h4>
+
+#### Buttons
 <ul class="actions">
     <li><a href="#" class="button primary">Primary</a></li>
     <li><a href="#" class="button">Default</a></li>
@@ -226,17 +241,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <li><a href="#" class="button fit small">Fit + Small</a></li>
 </ul>
 <ul class="actions">
-    <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-    <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+    <li><a href="#" class="button primary"><i class="fas fa-download"></i> Icon</a></li>
+    <li><a href="#" class="button"><i class="fas fa-download"></i> Icon</a></li>
 </ul>
 <ul class="actions">
     <li><span class="button primary disabled">Disabled</span></li>
     <li><span class="button disabled">Disabled</span></li>
 </ul>
-</section>
 
-<section>
-<h4>Form</h4>
+
+#### Form
 <form method="post" action="#">
     <div class="row gtr-uniform">
         <div class="col-6 col-12-xsmall">
@@ -285,26 +299,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         </div>
     </div>
 </form>
-</section>
 
-<section>
-<h4>Image</h4>
-<h5>Fit</h5>
+
+#### Image
+
+##### Fit
+
 <div class="box alt">
     <div class="row gtr-uniform gtr-50">
-        <div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-        <div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+        <div class="col-12"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
+        <div class="col-4"><span class="image fit"><img src="https://picsum.photos/500" alt="" /></span></div>
     </div>
 </div>
-<h5>Left &amp; Right</h5>
-<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-</section>
+
+##### Left &amp; Right
+
+<span class="image left"><img src="https://picsum.photos/500" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
+
+<span class="image right"><img src="https://picsum.photos/500" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
