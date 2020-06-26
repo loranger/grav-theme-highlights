@@ -35,7 +35,7 @@ Installing the Highlights theme can be done in one of two ways. Our GPM  (Grav P
 
 The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
 
-```
+```shell
 bin/gpm install highlights
 ```
 
@@ -55,7 +55,7 @@ You should now have all the theme files under
 
 Highlights comes with a few default options that can be set site-wide.  These options are:
 
-```
+```yaml
 enabled: true                 # Enable the theme
 logo_image:                   # A custom logo to use as favicon
 background_image:             # A custom image to use as the default background image
@@ -69,7 +69,7 @@ To make modifications, you can copy the `user/themes/highlights/highlights.yaml`
 
 To add a custom logo, you should put the log into the `user/themes/highlights/images/logo` folder.  Standard image formats are support (`.png`,`.jpg`, `.gif`, `.svg`, etc.).  Then reference the logo via the YAML like so:
 
-```
+```yaml
 logo_image:
     - name: 'my-logo.png'
 ```
@@ -80,7 +80,7 @@ Alternatively, you can you use the drag-n-drop "Logo image" field in the Highlig
 
 To add a custom background image, you should put the log into the `user/themes/highlights/images/background` folder.  Standard image formats are support (`.png`,`.jpg`, `.gif`, `.svg`, etc.).  Then reference the logo via the YAML like so:
 
-```
+```yaml
 background_image:
     - name: 'my-background.png'
 ```
@@ -97,7 +97,7 @@ As a single page theme, the modular page is the default one. Once you create you
 
 You can customize your header part with choosing to display or not a *begin* button leading to the first part of your single page website. You can also specify the label of this button
 
-```
+```yaml
 display_button: true
 button_label: Begin
 ```
@@ -106,7 +106,7 @@ button_label: Begin
 
 Each part of your single page website is a part page which can have a custom background, a displayed title or not, a custom next button label, and an ability to render list as grids
 
-```
+```yaml
 display_title: true
 next_label: Next
 list_as_grid: false
@@ -121,7 +121,7 @@ You can also use a default grav structure with pages using *default* template. A
 
 Each page can override the default website background image. The first uploaded image found in the page's folder will be used as background, but you can also specify another one if you uploaded more than one.
 
-```
+```yaml
 background_image: 'image_name'
 ```
 
@@ -142,7 +142,7 @@ npm run dev
 builds you assets for development purpose
 
 ```shell
-npm run prod
+npm run production
 ```
 
 bundles your assets for production.
