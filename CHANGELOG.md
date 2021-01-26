@@ -1,3 +1,9 @@
+# v1.0.3
+##  01/26/2021
+
+1. [](#improved)
+    * Better _list as grid_ rendering
+
 # v1.0.2
 ##  06/13/2020
 

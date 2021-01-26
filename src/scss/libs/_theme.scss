@@ -901,32 +901,33 @@
 		list-style: none;
 		padding: 0;
 		position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
 		li {
-			display: block;
-			float: left;
-			padding: (_size(element-margin) * 1.5) 0;
-			width: 50%;
+            padding: .2em;
+            border-bottom: 2px solid _palette(border);
+            border-right: 2px solid _palette(border);
 
-			h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 10em;
+
+			h3, .image.fit {
 				margin: 0;
 			}
 
-			&:nth-child(2n + 1) {
-				box-shadow: inset -1px 0 0 0 _palette(border), 1px 0 0 0 _palette(border);
-			}
+            &:nth-child(2n) {
+              border-right: var(--border);
+            }
 
-			&:nth-child(2n + 3) {
-				&:before {
-					background: _palette(border);
-					content: '';
-					display: block;
-					height: 2px;
-					margin-top: (_size(element-margin) * -1.5);
-					position: absolute;
-					width: 100%;
-				}
-			}
+            &:last-child,
+            &:nth-last-child(2):nth-child(odd) {
+                border-bottom: var(--border);
+            }
+
 		}
 
 		&:after {
